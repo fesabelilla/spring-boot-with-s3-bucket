@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    credentials:
+      access-key: {Enter your access key}
+      secret-key: {Enter your secret key}
+    region:
+      static: {Enter your region}
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: {Enter your bucket name}
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2MB
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+server:
+  port: 8089
